@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+<div class="auth-buttons"></div>
+        <div class="dropdown">
+            <button class="btn">Login Accounts</button>
+            <div class="dropdown-content">
+                <a href="account.html" onclick="accessAccount('Account 1')">Account 1</a>
+                <a href="account.html" onclick="accessAccount('Account 2')">Account 2</a>
+                <a href="account.html" onclick="accessAccount('Account 3')">Account 3</a><br>
+            </div>
+        </div>
+</div>
+<div class="auth-buttons">
+  <br>  <a href="signin.html" class="btn">Sign In</a>
+</div>
+
+    <script>
+        function accessAccount(accountName) {
+            // Logic to access a specific account
+            alert("Accessing " + accountName);
+        }
+</script>
+</body>
+</html>

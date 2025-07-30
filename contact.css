@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+}
+.navbar-brand img {
+    display: block;
+    width: 64px;
+    border: 1px solid #f4f4f4;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 15px;
+}
+.footer {
+    background-color: #ffffff; /* White background */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-social {
+    flex: 1;
+    max-width: 45%;
+}
+
+.footer-info h3,
+.footer-social h3 {
+    font-size: 24px;
+    color: #333333; /* Dark grey text */
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    font-size: 18px;
+    color: #666666; /* Light grey text */
+    margin-bottom: 10px;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social ul li a {
+    color: #333333; /* Dark grey text */
+    font-size: 24px;
+}
+
+.footer-bottom {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #333333; /* Dark grey text */
+}

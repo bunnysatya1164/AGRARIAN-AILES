@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Agrarian Aisles</title>
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+  <div class="signup-container" id="signup-container">
+    <h1>Agrarian Aisles</h1>
+    <form id="signup-form" onsubmit="signup(event)">
+      <div class="form-group">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="account.html">Login</a></p>
+  </div>
+  <script>
+// // signup.js
+
+function signup(event) {
+  event.preventDefault(); // Prevent form submission
+  var form = document.getElementById('signup-form');
+  var formData = new FormData(form);
+
+  // Add validation for password match before sending data
+  if (document.getElementById('password').value !== document.getElementById('confirm-password').value) {
+    alert('Passwords do not match!');
+    return;
+  }
+
+  fetch('signin.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status === 'success') {
+      alert('Signup successful! Please login.');
+      window.location.href = 'account.html';
+    } else {
+      alert('Signup failed: ' + data.message);
+    }
+  })
+  .catch(error => {
+    
+  })
+}
+  </script>
+</body>
+</html>

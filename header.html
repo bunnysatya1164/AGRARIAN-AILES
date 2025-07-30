@@ -1,0 +1,32 @@
+function handlePayment() {
+  // Get form data
+  const cardNumber = document.getElementById('card-number').value;
+  const expiryDate = document.getElementById('expiry-date').value;
+  const cvv = document.getElementById('cvv').value;
+
+  // Perform validation (you can add more validation logic here)
+  if (cardNumber && expiryDate && cvv) {
+      // Payment successful, you can perform further actions here (e.g., send data to server)
+      alert("Payment successful!");
+  } else {
+      alert("Please fill in all fields.");
+  }
+  window.location.href='product.html';
+}
+
+function confirmDelivery() {
+  // Get form data
+  const fullName = document.getElementById('full-name').value;
+  const address = document.getElementById('address').value;
+  const city = document.getElementById('city').value;
+  const zipCode = document.getElementById('zip-code').value;
+
+  // Perform validation (you can add more validation logic here)
+  if (fullName && address && city && zipCode) {
+      // Delivery confirmed, you can perform further actions here (e.g., send data to server)
+      alert("Delivery confirmed!");
+  } else {
+      alert("Please fill in all fields.");
+  }
+}
+</script>

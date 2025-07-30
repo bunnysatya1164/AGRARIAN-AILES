@@ -1,0 +1,93 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #5a5a5a;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+#logoutButton {
+    background-color: #007bff;
+    color: white;
+}
+
+#logoutButton:hover {
+    background-color: #0056b3;
+}
+
+/* Profile container */
+#profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Profile card */
+.profile-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.profile-card img{
+    width:174px;
+    border-radius: 25%;
+    
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.profile-card .btn-primary {
+    margin: 10px 0;
+}
+
+.profile-card .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-card .delete-button:hover {
+    background-color: #c82333;
+}
+
+.show {
+    display: inline-block;
+}

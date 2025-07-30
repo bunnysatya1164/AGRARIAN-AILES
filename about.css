@@ -1,0 +1,68 @@
+.navbar-brand img {
+    display: block;
+    width: 64px;
+    border: -50px solid #f4f4f4;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 15px;
+}
+.feature {
+    flex: 1;
+    max-width: 30%;
+    text-align:center;
+}
+
+.feature i {
+    font-size: 48px;
+    color: #007bff; /* Blue color for icons */
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    color: #333333; /* Dark grey text */
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 18px;
+    color: #666666; /* Light grey text */
+}
+.how-it-works {
+    background-color: #ffffff; /* White background */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.how-it-works .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.step {
+    flex: 1;
+    max-width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.step-number {
+    font-size: 36px;
+    color: #007bff; /* Blue color for step numbers */
+    margin-bottom: 15px;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    color: #333333; /* Dark grey text */
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 18px;
+    color: #666666; /* Light grey text */
+}

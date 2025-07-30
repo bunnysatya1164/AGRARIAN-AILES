@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+}
+.navbar-brand img {
+    display: block;
+    width: 64px;
+    border: -50px solid #f4f4f4;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 15px;
+    align-items: left ;
+}
+
+.registration-container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-container form input, 
+.registration-container form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-container form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.registration-container form button:hover {
+    background-color: #067;
+}
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}

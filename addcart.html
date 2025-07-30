@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrarian Aisles: Online Shopping with a Farmer's Touch</title>
+     <link rel="stylesheet" href="addcart.css">
+</head>
+<body>
+        <div id="checkout-cart"></div>
+        </div>
+        <div class="payment">
+            <h2>Payment</h2>
+            <div id="payment-details">
+                <input type="text" id="card-number" placeholder="Card Number" required>
+                <input type="text" id="expiry-date" placeholder="Expiry Date" required>
+                <input type="text" id="cvv" placeholder="CVV" required>
+
+            </div>
+            <button type="button" onclick="handlePayment()">Pay Now</button>
+        </div>
+        <div class="delivery">
+            <h2>Delivery Address</h2>
+            <form id="delivery-form">
+                <input type="text" id="full-name" placeholder="Full Name" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="zip-code" placeholder="Zip Code" required>
+                <button type="button" onclick="checkout()">Confirm Delivery</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        let cart = [];  // Global variable for cart data (optional, can be removed)
+
+// Existing JavaScript code from your original response goes here
+
+window.onload = function() {
+  const storedCart = localStorage.getItem('cart');
+  if (storedCart) {
+    cart = JSON.parse(storedCart);
+    updateCart(document.getElementById('checkout-cart')); // Update cart display on checkout page
+  }
+};
+        function handlePayment() {
+    alert('Payment processed successfully!');
+    // Add logic here to handle payment processing
+}
+
+function checkout() {
+    alert('Delivery address confirmed!');
+    // Add logic here to handle checkout and delivery processing
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+            // Retrieve cart details from local storage
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Display cart details
+            const paymentDetailsContainer = document.getElementById('payment-details');
+            let total = 0;
+            cart.forEach(item => {
+                const itemDetails = document.createElement('div');
+                itemDetails.textContent = `${item.name} - ${item.quantity} kg - ₹${item.price * item.quantity}`;
+                paymentDetailsContainer.appendChild(itemDetails);
+                total += item.price * item.quantity;
+            });
+            const totalDetails = document.createElement('div');
+            totalDetails.textContent = `Total: ₹${total.toFixed(2)}`;
+            paymentDetailsContainer.appendChild(totalDetails);
+        });
+   </script>
+</body>
+</html>
